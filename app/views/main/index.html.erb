@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="index.html" class="navbar-brand"><strong>Televisit.IOO</strong></a>
+                <a href="index.html" class="navbar-brand"><strong> <%= image_path("slides/scene1/macbook.png")%>  Televisit.IO</strong></a>
             </div>
 
             <div class="collapse navbar-collapse navbar-ex1-collapse" role="navigation">
@@ -54,19 +54,19 @@
 
             For the backgrounds, you can combine from the bgs folder :D
         -->
-        <article class="slide" id="showcasing" style="background: url('assets/backgrounds/landscape.png') repeat-x top center;">
-            <img class="asset left-30 sp600 t120 z1" src="assets/slides/scene1/macbook.png" />
+        <article class="slide" id="showcasing" style="background: url('<%= image_path("backgrounds/landscape.png")%>') repeat-x top center;">
+            <img class="asset left-30 sp600 t120 z1" src="<%= image_path("slides/scene1/macbook.png")%>" />
             <div class="info">
                 <h2>Beautiful theme for showcasing your works.</h2>
             </div>
         </article>
-        <article class="slide" id="ideas" style="background: url('assets/backgrounds/aqua.jpg') repeat-x top center;">
+        <article class="slide" id="ideas" style="background: url('<%= image_path("backgrounds/aqua.jpg")%> ') repeat-x top center;">
             <div class="info">
                 <h2>We love to turn ideas into beautiful things.</h2>
             </div>
-            <img class="asset left-480 sp600 t260 z1" src="assets/slides/scene2/left.png" />
-            <img class="asset left-210 sp600 t213 z2" src="assets/slides/scene2/middle.png" />
-            <img class="asset left60 sp600 t260 z1" src="assets/slides/scene2/right.png" />
+            <img class="asset left-480 sp600 t260 z1" src="<%= image_path("slides/scene2/left.png")%>" />
+            <img class="asset left-210 sp600 t213 z2" src="<%= image_path("slides/scene2/middle.png")%>" />
+            <img class="asset left60 sp600 t260 z1" src="<%= image_path("slides/scene2/right.png")%>" />
         </article>
         <article class="slide" id="tour" style="background: url('assets/backgrounds/color-splash.jpg') repeat-x top center;">
             <img class="asset left-472 sp650 t210 z3" src="assets/slides/scene3/ipad.png" />
