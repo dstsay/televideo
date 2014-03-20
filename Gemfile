@@ -3,8 +3,19 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# For testing on local machine, use SQlite3 database
+group :development, :test do
+  gem 'sqlite3'
+end
+
+# For deployment on heroku, must use pg database instead of sql
+group :production, :staging do
+      gem 'pg'
+end
+
+# Use OpenTok for peer-to-peer video chat
+gem 'opentok', '0.1.2'
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
