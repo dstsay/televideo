@@ -14,6 +14,7 @@ module Televisit
     config.assets.version = "1.1"
     # Add fonts folder to asset paths ??Not sure if i need this - commented out
     # config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+    config.assets.precompile = ['*.css.erb']
     
     # Serving static assets on Heroku for asset pipeline
     config.serve_static_assets = true
