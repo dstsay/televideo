@@ -11,7 +11,7 @@ module Televisit
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
-    config.assets.version = 1.1
+    config.assets.version = "1.1"
     # Add fonts folder to asset paths ??Not sure if i need this - commented out
     # config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
     
