@@ -12,5 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.all
 //= require turbolinks
 //= require_tree .
+
+// This initiates javascript objects within the page on document ready
+$(document).ready(function(){
+	
+	// Make sure Dropdown buttons in Navbar drop down on cick
+    $('.dropdown-toggle').dropdown()
+});
