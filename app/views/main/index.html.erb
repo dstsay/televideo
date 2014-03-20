@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="index.html" class="navbar-brand"><strong> <%= image_path("slides/scene1/macbook.png")%>  Televisit.IO</strong></a>
+                <a href="index.html" class="navbar-brand"><strong> Televisit.IO</strong></a>
             </div>
 
             <div class="collapse navbar-collapse navbar-ex1-collapse" role="navigation">
@@ -68,19 +68,19 @@
             <img class="asset left-210 sp600 t213 z2" src="<%= image_path("slides/scene2/middle.png")%>" />
             <img class="asset left60 sp600 t260 z1" src="<%= image_path("slides/scene2/right.png")%>" />
         </article>
-        <article class="slide" id="tour" style="background: url('assets/backgrounds/color-splash.jpg') repeat-x top center;">
-            <img class="asset left-472 sp650 t210 z3" src="assets/slides/scene3/ipad.png" />
-            <img class="asset left-365 sp600 t270 z4" src="assets/slides/scene3/iphone.png" />
-            <img class="asset left-350 sp450 t135 z2" src="assets/slides/scene3/desktop.png" />
-            <img class="asset left-185 sp550 t220 z1" src="assets/slides/scene3/macbook.png" />
+        <article class="slide" id="tour" style="background: url('<%= image_path("backgrounds/color-splash.jpg")%>') repeat-x top center;">
+            <img class="asset left-472 sp650 t210 z3" src="<%= image_path("slides/scene3/ipad.png")%>" />
+            <img class="asset left-365 sp600 t270 z4" src="<%= image_path("slides/scene3/iphone.png")%>" />
+            <img class="asset left-350 sp450 t135 z2" src="<%= image_path("slides/scene3/desktop.png")%>" />
+            <img class="asset left-185 sp550 t220 z1" src="<%= image_path("slides/scene3/macbook.png")%>" />
             <div class="info">
                 <h2>Fully Responsive theme</h2>
                 <a href="features.html">TOUR THE PRODUCT</a>
             </div>
         </article>
-        <article class="slide" id="responsive" style="background: url('assets/backgrounds/indigo.jpg') repeat-x top center;">
-            <img class="asset left-472 sp600 t120 z3" src="assets/slides/scene4/html5.png" />
-            <img class="asset left-190 sp500 t120 z2" src="assets/slides/scene4/css3.png" />
+        <article class="slide" id="responsive" style="background: url('<%= image_path("backgrounds/indigo.jpg")%>') repeat-x top center;">
+            <img class="asset left-472 sp600 t120 z3" src="<%= image_path("slides/scene4/html5.png")%>" />
+            <img class="asset left-190 sp500 t120 z2" src="<%= image_path("slides/scene4/css3.png")%>" />
             <div class="info">
                 <h2>
                     Responsive <strong>HTML5 & CSS3</strong>
@@ -119,7 +119,7 @@
                     <div class="col-sm-4 feature">
                         <div class="img_box">
                             <a href="services.html">
-                                <img src="assets/service2.png">
+                                <img src="<%= image_path("service2.png")%>">
                                 <span class="circle"> 
                                     <span class="plus">&#43;</span>
                                 </span>
@@ -136,7 +136,7 @@
                     <div class="col-sm-4 feature last">
                         <div class="img_box">
                             <a href="services.html">
-                                <img src="assets/service3.png">
+                                <img src="<%= image_path("service3.png")%>">
                                 <span class="circle"> 
                                     <span class="plus">&#43;</span>
                                 </span>
@@ -161,11 +161,11 @@
             </div> 
             <div class="row feature">
                 <div class="col-sm-6">
-                    <img src="assets/showcase1.png" class="img-responsive" />
+                    <img src="<%= image_path("showcase1.png")%>" class="img-responsive" />
                 </div>
                 <div class="col-sm-6 info">
                     <h3>
-                        <img src="assets/features-ico1.png" />
+                        <img src="<%= image_path("features-ico1.png")%>" />
                         Beautiful on all devices
                     </h3>
                     <p>
@@ -175,11 +175,11 @@
             </div>
             <div class="row feature">
                 <div class="col-sm-6 pic-right">
-                    <img src="assets/showcase2.png" class="pull-right img-responsive" />
+                    <img src="<%= image_path("showcase2.png")%>" class="pull-right img-responsive" />
                 </div>
                 <div class="col-sm-6 info info-left">
                     <h3>
-                        <img src="assets/features-ico2.png" />
+                        <img src="<%= image_path("features-ico2.png")%>" />
                         Blog page included
                     </h3>
                     <p>
@@ -189,11 +189,11 @@
             </div>
             <div class="row feature">
                 <div class="col-sm-6">
-                    <img src="assets/showcase3.png" class="img-responsive" />
+                    <img src="<%= image_path("showcase3.png")%>" class="img-responsive" />
                 </div>
                 <div class="col-sm-6 info">
                     <h3>
-                        <img src="assets/features-ico3.png" />
+                        <img src="<%= image_path("features-ico3.png")%>" />
                         Simple and clean coming soon page
                     </h3>
                     <p>
@@ -245,7 +245,7 @@
                 <div class="col-sm-4 pro">
                     <div class="plan">
                         <div class="wrapper">
-                            <img class="ribbon" src="assets/badge.png">
+                            <img class="ribbon" src="<%= image_path("badge.png")%>">
                             <h3>Pro</h3>
                             <div class="price">
                                 <span class="dollar">$</span> 
@@ -348,7 +348,7 @@
                     </h3>
                     <div class="post">
                         <a href="blogpost.html">
-                            <img src="assets/recent_post1.png" class="img-circle" />
+                            <img src="<%= image_path("recent_post1.png")%>" class="img-circle" />
                         </a>
                         <div class="date">
                             Wed, 12 Dec
@@ -359,7 +359,7 @@
                     </div>
                     <div class="post">
                         <a href="blogpost.html">
-                            <img src="assets/recent_post2.png" class="img-circle" />
+                            <img src="<%= image_path("recent_post2.png")%>" class="img-circle" />
                         </a>
                         <div class="date">
                             Mon, 12 Dec
@@ -380,7 +380,7 @@
                             <span></span>
                         </div>
                         <div class="author">
-                            <img src="assets/user-display.png" />
+                            <img src="<%= image_path("user-display.png")%>" />
                             <div class="name">Alejandra Galvan Castillo</div>
                             <div class="info">
                                 Details Canvas
