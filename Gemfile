@@ -11,6 +11,7 @@ end
 # For deployment on heroku, must use pg database instead of sql
 group :production, :staging do
       gem 'pg'
+      gem 'rails_12factor'
 end
 
 # Use OpenTok for peer-to-peer video chat
