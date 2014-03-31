@@ -95,7 +95,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '2c46a13f6eac81af10e117ebb0b118588c62b2c2df23bc180c8457a34f97fba80789877fd1833239dc62615216b186ceaf8a6fc713579eac4a1e058c18b67af9'
+  config.pepper = '2c46a13f6eac81af10e117ebb0b118588c62b2c2df23bc180c8457a34f97fba80789877fd1833239dc62615216b186ceaf8a6fc713579eac4a1e058c18b67af9'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -194,7 +194,7 @@ Devise.setup do |config|
   # REST_AUTH_SITE_KEY to pepper).
   #
   # Require the `devise-encryptable` gem when using anything other than bcrypt
-  # config.encryptor = :sha512
+  config.encryptor = :sha512
 
   # ==> Scopes configuration
   # Turn scoped views on. Before rendering "sessions/new", it will first check for
