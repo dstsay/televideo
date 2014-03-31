@@ -1,6 +1,9 @@
 Televisit::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # Set mailer for DEVISE
+  config.action_mailer.default_url_options = { :host => 'http://televisit.herokuapp.com' }
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -77,4 +80,19 @@ Televisit::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+  
+  # Configure for Sendgrid
+  config.action_mailer.default_url_options = { :host => 'http://televisit.herokuapp.com' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address        => 'smtp.sendgrid.net',
+    :port           => '587',
+    :authentication => :plain,
+    :user_name      => ENV['SENDGRID_USERNAME'],
+    :password       => ENV['SENDGRID_PASSWORD'],
+    :domain         => EBG['SENDGRID_DOMAIN'],
+    :enable_starttls_auto => true
+  }
+  config.action_mailer.raise_delivery_errors = true
+  
 end
