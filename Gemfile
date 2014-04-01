@@ -3,9 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 
-# Serve static assets on heroku
-gem 'rails_12factor', group: :production
-
 gem 'devise'
 gem 'devise-encryptable'
 
