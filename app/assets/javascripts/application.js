@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.ui.all
-//= require turbolinks
 //= require_tree .
 
 // This initiates javascript objects within the page on document ready
