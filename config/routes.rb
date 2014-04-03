@@ -1,4 +1,5 @@
 Televisit::Application.routes.draw do
+  devise_for :providers
   devise_for :users
   get "main/index"
   # The priority is based upon order of creation: first created -> highest priority.
